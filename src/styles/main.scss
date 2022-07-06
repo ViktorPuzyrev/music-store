@@ -41,3 +41,25 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.section-title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: $grey;
+  text-align: center;
+  position: relative;
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: $primary;
+  }
+}
