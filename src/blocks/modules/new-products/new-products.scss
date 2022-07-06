@@ -1,0 +1,103 @@
+.new-product {
+  margin-bottom: 88px;
+}
+
+.new-products__title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: $grey;
+  text-align: center;
+  position: relative;
+  margin-bottom: 34px;
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: $primary;
+  }
+}
+
+.new-products__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 32px;
+  row-gap: 34px;
+}
+
+.new-products__card {
+  grid-column: span 2;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
+  &:last-child {
+    display: none;
+  }
+}
+
+.new-products__card-pic {
+  padding: 6px 44px 12px;
+  background: radial-gradient(
+    98.56% 98.92% at 1.22% 1.08%,
+    #fbfbfb 0%,
+    #d3d3d3 100%
+  );
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  height: 252px;
+}
+
+.new-products__card-thumb {
+  position: absolute;
+  top: -20px;
+}
+
+.new-products__card-info {
+  padding: 16px 24px 24px;
+}
+
+.new-products__card-brand-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-products__card-title,
+.new-products__card-price {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: $darkGrey;
+}
+
+.new-products__card-title {
+}
+
+.new-products__card-desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $ligthGrey;
+  margin: 6px 0;
+  min-height: 42px;
+}
+
+.new-products__card-tags {
+}
+
+.new-products__card-tag {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $grey;
+  padding: 2px 6px;
+  border: 1px solid $veryLightGray;
+  border-radius: 20px;
+}

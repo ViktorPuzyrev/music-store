@@ -1,0 +1,70 @@
+.header {
+  margin-bottom: 178px;
+}
+
+.header__container {
+  max-width: 1294px;
+  padding: 56px 15px 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  width: 255px;
+  height: 40px;
+  margin-right: 24px;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+  }
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header__item {
+  margin-right: 24px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.header__link {
+  padding: 0 16px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+.header__user {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 22px 0 auto;
+}
+
+.header__cart {
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+  margin-right: 16px;
+  background: url("../img/svg/cart-ico.svg") no-repeat center;
+}
+
+.header__account {
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+  background: url("../img/svg/account-ico.svg") no-repeat center;
+}
